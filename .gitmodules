@@ -19,3 +19,18 @@
 [submodule "TDT4225"]
 	path = TDT4225
 	url = https://github.com/Paalar/TDT4225.git
+[submodule "IT2810/it2810-prosjekt-1"]
+	path = IT2810/it2810-prosjekt-1
+	url = https://github.com/Paalar/it2810-prosjekt-1.git
+[submodule "IT2810/it2810-backend-group-6-26-35"]
+	path = IT2810/it2810-backend-group-6-26-35
+	url = https://github.com/Paalar/it2810-backend-group-6-26-35.git
+[submodule "IT2810/it2810-webutvikling-h18-prosjekt-3-35"]
+	path = IT2810/it2810-webutvikling-h18-prosjekt-3-35
+	url = https://github.com/Paalar/it2810-webutvikling-h18-prosjekt-3-35.git
+[submodule "IT2810/it2810-webutvikling-h18-prosjekt-2-gruppe--35"]
+	path = IT2810/it2810-webutvikling-h18-prosjekt-2-gruppe--35
+	url = https://github.com/Paalar/it2810-webutvikling-h18-prosjekt-2-gruppe--35.git
+[submodule "TDT4136"]
+	path = TDT4136
+	url = https://github.com/Paalar/TDT4136.git

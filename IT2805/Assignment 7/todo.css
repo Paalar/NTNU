@@ -1,4 +1,0 @@
-input[type=checkbox]:checked + label {
-  text-decoration: line-through;
-  color: hotpink;
-}

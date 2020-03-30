@@ -34,3 +34,6 @@
 [submodule "TDT4145"]
 	path = TDT4145
 	url = https://github.com/Paalar/TDT4145.git
+[submodule "TDT4171"]
+	path = TDT4171
+	url = https://github.com/Paalar/TDT4171.git

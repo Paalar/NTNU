@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tax forms: Bar chart with lines</title>
+    <meta charset="UTF-8">
+    <script src="taxForms.js"></script>
+  </head>
+  <body>
+
+    <canvas id="chart" width="700" height="500"></canvas>
+
+    <script>
+      const canvas = document.getElementById('chart');
+      const context = canvas.getContext('2d');
+
+      /* Draw a line from (fromX, fromY) to (toX, toY) */
+      function drawLine(fromX, fromY, toX, toY) {
+        context.beginPath();
+        context.moveTo(toX, toY);
+        context.lineTo(fromX, fromY);
+        context.stroke();
+      }
+
+      /* Draw a text (string) on (x, y) */
+      function drawText(text, x, y) {
+        context.fillText(text, x, y);
+      }
+
+      /* Draw a text and with a line to its right */
+      function drawLineWithText(text, fromX, fromY, toX, toY) {
+        drawText(text, fromX - 50, fromY + 10);
+        drawLine(fromX, fromY, toX, toY);
+      }
+
+      /* Insert your code here. */
+      var number = 1000000
+      for (var i = 0; i <= 450; i += 50) {
+        drawLineWithText(number, 50, i, 600, i);
+        number -= 100000;
+      }
+        drawText("Income", 660, 15, 50, 40);
+        drawText("Wealth", 660, 45, 50, 40);
+
+      function createLabels(hexcolor, fromX, fromY, toX, toY) {
+        context.fillStyle = hexcolor;
+        context.fillRect (fromX, fromY, toX, toY);
+      }
+
+      createLabels("#FF0000", 605, 0, 50, 20 );
+      createLabels("#0000FF", 605, 30, 50, 20);
+
+    </script>
+  </body>
+</html>

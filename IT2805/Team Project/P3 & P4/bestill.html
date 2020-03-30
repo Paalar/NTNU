@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" lang="no">
+  <link rel="stylesheet" href="nodvendig.css">
+  <link rel="icon" type="image/ico" href="favicon.png" />
+  <title>Sverres Puns - Bestill</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Bestill</h1><br><br>
+    <p id="bestillp">Bestill siden er for dere som er veldig glad i puns, men får ikke til å lage deres egne. Derfor har vi en bestill side der man kan
+      bestille en pun rett fra Sverre selv. Her kan du sende hva punen din skal handle om og hvis ønsket, et bakgrunnsbilde for punen.</p>
+    <form action="mailto:paaledward@gmail.com?subject=Pun%20for%20bestilling" enctype="text/plain" method="POST" class="bestillform" name="formName" onsubmit="return validateForm()">
+
+      <input autofocus type="email" name="senderEpost_" id="email" placeholder="Din epost: olaola@nordmann.no"><br>
+      <input type="text" name="senderNavn_" id="name" placeholder="Ditt navn: Ola Nordmann"><br>
+      <textarea rows="4" cols="50" id="puntext" name="punTekst_" placeholder="Forklaring av ønsket pun"></textarea><br>
+      <!--Uses textarea instead of input type="text" since that works for multiline text inputs. It is automatically set to have 4 rows and 50columns. -->
+      <button type="submit"id="buttonpun">Send</button>
+    </form>
+    <p><b>Advsersel:</b> Det er mulig at bokstavene <b>"æ"</b> <b>"ø"</b> og <b>"å"</b> ikke vises riktig i e-posten.</p>
+  </div>
+  <footer><span>Laget av: Adrian, Einar, Johannes, Peter og Pål</span> <span>| 2016</span></footer>
+  <script src="formValidation.js"></script>
+</body>
+</html>

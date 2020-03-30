@@ -1,0 +1,51 @@
+#wrapper {
+    position: relative;
+    margin: auto;
+    margin-bottom: 30px;
+    height: 100%;
+    width: 65%;
+    background-color: #ffffff;
+}
+
+h1{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#FAQgroup{
+    position: absolute;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+ 
+#FAQgroup::before{
+    display: inline-block;
+    border-right: 1px solid #999999;
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.FAQ{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    height: 100%;
+}
+
+.FAQ > h2{
+    margin: 30px;
+}
+
+.FAQpara{
+    margin: 30px;
+}

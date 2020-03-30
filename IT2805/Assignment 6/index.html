@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+
+        <title> Norwegian Tax Administration - Tax form</title>
+    </head>
+    <body>
+      <div class="wrapper">
+        <img src="superhero.png" alt="superhero">
+        <form class="form1" action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post">
+
+          <label for="name">Real name:</label>
+          <input autofocus="autofocus" type="text" name="name" placeholder="Your real name" pattern="^[a-zA-Z\s]*$"> <br>
+          <!-- input form where you write your real name -->
+
+          <label for="gender">Gender:</label> <br>
+          <input type="radio" name="gender" value="male" required> Male
+          <input type="radio" name="gender" value="female" required> Female
+          <input type="radio" name="gender" value="other" required> Other <br>
+          <!-- Check form where you check if you're a man, woman or other -->
+
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" placeholder="superero@gmail.com" required> <br>
+          <!-- form that requires an email -->
+
+          <label for="birthdate">Birthdate:</label>
+          <input type="date" name="birthdate" max="1987-31-12" required> <br>
+          <!-- form that requires a birthdate from atleast 1988 and onwards -->
+
+          <label for="superheroname">Your Superhero name:</label>
+          <input type="text" name="superheroname" placeholder="Batman" required> <br>
+          <!--Form that requires your superhero name -->
+
+          <label for="spandex">Do you wear spandex:</label> <br>
+          <input type="radio" name="spandex" value="yes"  required> Yes
+          <input type="radio" name="spandex" value="no" required> No <br>
+          <!-- form that checks if you wear a spandex or not-->
+
+          <label for="strength">Strength from 1 to 10:</label>
+          <input type="number" name="strength" min="1" max="10" placeholder="6" required> <br>
+          <!-- form  where you put your own strength from 1 to 10 -->
+
+          <label for="speed">Speed from 1 to 10:</label>
+          <input type="number" name="speed" min="1" max="10" placeholder="8" required> <br>
+          <!-- form where you put your own speed from 1 to 10 -->
+
+          <label for="intelligence">Intelligence from 1 to 10:</label>
+          <input type="number" name="intelligence" min="1" max="10" placeholder="0" required> <br><br>
+          <!-- form where you put your own intelligence from 1 to 10-->
+
+          <label for="income">Income</label>
+          <input type="number" id="income" name="income" min="0" required placeholder="Example '123 000'" oninput = "taxation();"> <br> <!-- calls the function taxation() from the javascript-->
+          <!-- form that checks for your income -->
+
+          <label for="wealth">Wealth</label>
+          <!-- form that checks for your wealth -->
+          <input type="number" id="wealth" name="wealth" min="0" required placeholder="Example '21 000'" oninput = "taxation();"> <br> <!-- calls the function taxation() from the javascript-->
+
+          <label for="tax">Tax</label>
+          <input disabled name="tax" id="tax" placeholder="Example 44 790"> <br><br>
+          <!-- form that check for your tax -->
+
+
+          <input type="checkbox" id="check" value="en">
+          <input type="checkbox" id="noe" value="to>"
+
+          <input type="button" value='Submit'
+          <!-- submit button. Cannot submit until all the required fields above are filled in and correct. -->
+
+        </form>
+      </div>
+    <script src="javascript.js"></script> <!-- references the javascript -->
+    </body>
+</html>

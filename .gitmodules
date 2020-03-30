@@ -1,3 +1,6 @@
 [submodule "IT2805"]
 	path = IT2805
 	url = https://github.com/Paalar/IT2805.git
+[submodule "TDT4110"]
+	path = TDT4110
+	url = https://github.com/Paalar/TDT4110.git
